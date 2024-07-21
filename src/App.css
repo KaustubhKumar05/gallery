@@ -4,8 +4,15 @@
   max-width: 350px;
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 4px;
+  border-radius: 8px;
   animation: skeleton-loading 1s linear infinite alternate;
+}
+
+video {
+  height: 350px;
+  width: 350px;
+  object-fit: fill;
+  border-radius: 8px;
 }
 
 @keyframes skeleton-loading {
