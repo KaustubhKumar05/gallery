@@ -6,6 +6,9 @@
   aspect-ratio: 1;
   border-radius: 8px;
   cursor: move;
+  background: linear-gradient(90deg, #c0c0c0 15%, #f0f0f0 40%, #c0c0c0 75%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
 }
 
 video {
@@ -13,7 +16,7 @@ video {
   width: 350px;
   object-fit: fill;
   border-radius: 8px;
-  border: none;
+  border: 1px;
 }
 
 .card video:hover {
@@ -36,6 +39,15 @@ video {
   padding: 4px 8px;
   border-radius: 8px;
   pointer-events: none;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 .card:hover p {
